@@ -1,0 +1,256 @@
+/* ==============================================
+   FEUILLE DE STYLES DES GABARITS HTML/CSS --- 11
+   © Elephorm & Alsacreations.com
+   Conditions d'utilisation:
+   https://creativecommons.org/licenses/by/2.0/fr/
+   ============================================== */
+
+
+/* --- COULEURS --- */
+
+/* Note: vous pouvez modifier simplement l'aspect de ce gabarit en modifiant
+   uniquement les couleurs de fond (propriétés background) et les couleurs
+   du texte (propriété color).
+   Pour modifier la disposition des blocs, voir plus bas dans la feuille de
+   styles la partie «positionnement». */
+
+/* Général */
+body {
+	color: yellow;
+	background: rgb(206, 224, 230);
+}
+a {
+	color: #FF6533;
+}
+a:hover, a:focus {
+	color: #FF4C00;
+}
+strong {
+	color: #A1B55D;
+}
+
+/* Conteneur central */
+#centre {
+	/* Changement de url pour fonctionnement de l'image. */
+	background: url(../images/11-colgauche.png) repeat-y left top;
+}
+#centre-bis {
+	/* Changement de url pour fonctionnement de l'image. */
+	background: url(../images/11-coldroite.png) repeat-y right top;
+}
+
+/* Navigation */
+#navigation {
+	background: black;
+}
+#navigation a {
+	color: cyan;
+}
+#navigation a:hover, #navigation a:focus {
+	background: #007FFF;
+}
+
+/* Contenu principal */
+#principal {
+	color: midnightblue;
+	background: lightpink;
+}
+#principal a {
+	color: #332510;
+}
+#principal a:hover, #principal a:focus {
+	color: #6E5122;
+}
+#principal strong {
+	color: #181A12;
+}
+
+/* Contenu secondaire */
+#secondaire {
+	background: navy;
+}
+
+
+
+/* --- POSITIONNEMENT --- */
+
+/* Page */
+body {
+	padding: 20px 5px;
+}
+#global {
+	width: 90%;
+	max-width: 90em;
+	min-width: 850px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* En-tête */
+#entete {
+	padding: 20px 0;
+}
+#entete h1 {
+	margin: 0;
+}
+#entete h1 img {
+	float: left;
+	margin: 7px 20px 10px 0;
+}
+#entete .sous-titre {
+	margin: 4px 0 15px 0;
+}
+
+/* Bloc central */
+#centre-bis {
+	width: 100%;
+	overflow: hidden;
+}
+
+/* Menu de navigation */
+#navigation {
+	float: left;
+	width: 180px;
+}
+#navigation ul {
+	margin: 0;
+	padding: 20px 10px 20px 10px;
+	list-style: none;
+}
+#navigation a {
+	display: block;
+	height: 1%;
+	padding: 6px 10px 6px 10px;
+	line-height: 1.5;
+	font-size: .9em;
+	text-decoration: none;
+}
+
+/* Contenu principal */
+#principal {
+	margin-left: 200px;
+	margin-right: 260px;
+	padding: 10px 20px;
+}
+#principal > :first-child {
+	margin-top: 10px;
+}
+#principal p, #principal li {
+	line-height: 1.5;
+}
+
+/* Contenu secondaire */
+#secondaire {
+	float: right;
+	width: 200px;
+	padding: 12px 20px;
+}
+
+/* Pied de page */
+#pied {
+	margin: 0;
+	padding: 15px 260px 10px 200px;
+	font-size: .85em;
+}
+
+/* Mention de copyright */
+#copyright {
+	margin: 8px 0 0 0;
+	font-size: 1em;
+	text-align: left;
+}
+
+/* Conteneur flexbox pour mettre le flexbox facilement dans toutes les pages */
+.flex-container {
+	display: flex;
+	flex-direction: column;
+}
+.flex-container > p
+{
+	background-color: gray;
+	margin: 7px;
+	padding: 7px;
+}
+
+/* Classes pour les pages de présentations */
+.gras {
+	td:first-child {
+		font-weight:bold;
+	}
+}
+
+.italique {
+	td:last-child {
+		font-style:italic;
+	}
+}
+
+.bordure > p {
+	border-style: dotted;
+}
+
+/* Agrandissement des images dans les pages de présentations */
+html, body 
+						{
+						 padding:0;
+						 margin:0;
+						 height:100%
+						}		
+				#cache1, #cache2 /* Séparation en 2 pour les 2 images dans les pages de présentations */
+				       {
+						position:absolute;
+						background:rgba(0,0,0,0);
+						top:0;
+						right:0;
+						bottom:0;
+						left:0;
+						z-index: -1;
+						transition: background 10s;
+				       }
+					   
+              /* Le target se fait sur l'identifiant cache*/			
+				#cache1:target, #cache2:target /* Séparation en 2 pour les 2 images dans les pages de présentations */
+				         {
+					       background:rgba(0,0,0, .5);
+					       z-index: 1;
+				         }	   
+				.popup 
+						{
+						position:absolute;
+						z-index: 2000;
+						display:none;
+						top:250px;
+						left:300px;
+						}
+						
+				/*Sélectionne tout élément a qui est 
+				  descendant d’un élément popup*/
+				.popup a 
+						{
+						position:absolute;
+						background: #333;
+						color:red;
+						border-radius: 50%;
+						width:20px;
+						line-height: 20px;
+						text-align: center;
+						font-family:arial;
+						right:0;
+						text-decoration: none;
+						}
+						
+				/*Sélectionne tout élément popup qui est 
+				  Frère général du target( #cache:target )*/	
+				#cache1:target ~ .popup, #cache2:target ~ .popup /* Séparation en 2 pour les 2 images dans les pages de présentations */
+						{
+						 display:block;
+						 
+						 border: 5px  yellow  double;
+				        }
+						
+/* Menu dynamique */
+li ul {display: none;}
+
+li:hover ul.webnovel, li:hover ul.royalroad, li:hover ul.scribblehub{display:block;}
+
+a.fleche {background-position: right; background-image: url(../images/fleche.png); background-repeat: no-repeat;}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+		<meta charset="utf-8" />
+		<title>Conclusion</title>
+		<!-- id #change pour trouver le bon élément + id #lien pour changer l'attribut href dans le fichier externe -->
+		<style>
+			#change {}
+			#lien {}
+		</style>
+		<link rel= "stylesheet" type= "text/css" href= "styles/base.css"/>
+		<link id="lien" rel= "stylesheet" type= "text/css" href= "styles/modele11.css"/>
+    </head>
+	
+    <body>
+		
+		<!-- largeur de 90%, marges automatiques, empêche de prendre une largeur trop faible ou trop importante -->
+		<div id="global">
+		
+			<!-- En-tête 1 -->
+			<header id="entete">
+				<h2>Conclusion</h2>
+			</header>
+			
+			<!-- Répète une image à la gauche pour crée une colonne -->
+			<section id="centre">
+				<!-- Répète une image à la droite pour crée une colonne -->
+				<div id="centre-bis">
+				
+					<!-- Liens vers pages de présentation avec sous-menu (Liens vers tableaux), accueil et conclusion -->
+					<nav id="navigation">
+						<ul>
+							<li><a href="index.html">Index</a></li>
+							<li>
+								<a href="webnovel.com.html" class="fleche">WebNovel</a>
+								<ul class="webnovel">
+									<li><a href="webnovel.com.html#tableau-info">Informations sur la page d'accueil</a></li>
+									<li><a href="webnovel.com.html#tableau-type">Types de contenu</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="royalroad.com.html" class="fleche">Royal Road</a>
+								<ul class="royalroad">
+									<li><a href="royalroad.com.html#tableau-info">Informations sur la page d'accueil</a></li>
+									<li><a href="royalroad.com.html#tableau-type">Types de contenu</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="scribblehub.com.html" class="fleche">Scribble Hub</a>
+								<ul class="scribblehub">
+									<li><a href="scribblehub.com.html#tableau-info">Informations sur la page d'accueil</a></li>
+									<li><a href="scribblehub.com.html#tableau-type">Types de contenu</a></li>
+								</ul>
+							</li>
+							<li><a href="conclusion.html">Conclusion</a></li>
+							<!-- Option de menu qui permet de changer le style sur le clic -->
+							<li><span id="change">Change le style du page au modèle 8</span></li>
+						</ul>
+					</nav>
+				
+					<!-- Le contenu secondaire -->
+					<div id="secondaire">
+						<h3>Contenu secondaire</h3>
+						<p>« Lire est le seul moyen de vivre plusieurs fois ». Pierre Dumayet</p>
+						<p>« La lecture agrandit l’âme. » Voltaire</p>
+						<p>« Si vous n’aimez pas lire, vous n’avez pas trouvé le bon livre. » J.K. Rowling</p>
+					</div>
+				
+					<!-- Le contenu principal avec le conteneur Flexbox -->
+					<div id="principal" class="flex-container">
+						<!-- observation 1 -->
+						<p>Une observation que je fais est que WebNovel contient beaucoup moins d'avertissements que Royal Road et Scribble Hub. Il y a des raisons pour ceci. WebNovel utilise sa propre monnaie que tu peux acheter avec du vrai argent pour déverrouiller des chapitres et plus.Royal Road contient plein d'avertissements créer par des avertisseurs et des utilisateurs qui veulent apporter de l'attention à leur créations, mais tu peux t'abonner pour une certaine somme par mois pour ne plus les voir. Scribble Hub peut seulement recevoir de l'argent par des avertissements, donc il en a le plus.</p>
+
+						<!-- observation 2 -->
+						<p>Je remarque aussi que la page d'accueil de Royal Road est fantastique, celui de WebNovel est professionnel et celui de Scribble Hub est minimaliste. La page d'accueil de WebNovel et Royal Road sont beaucoup plus grand que la page d'accueil de ScribbleHub. La page d'accueil de WebNovel et Royal Road montrent plusieurs sections qui facilitent la recherche pour votre prochaine lecture, mais Scribble Hub montre seulement les oeuvres qui ont une nouvelle chapitre et les oeuvres qui sont populaires.</p>
+
+						<!-- observation 3 -->
+						<p>De plus, j'observe que les interfaces de navigation sont similaires. La position est le même, le logo qui amène à la page d'accueil existe dans tous les sites, la loupe existe, l'option de création existe, etc. Tous les sites n'ont pas tous les options des autres sites et les noms des interfaces peuvent être différents, mais c'est impossible de nier les similitudes.</p>
+					</div>
+			
+				</div>
+			</section>
+			
+			<!-- Pied de page avec copyright -->
+			<footer id="pied">
+				<p id="copyright">Mise en page © 2008 <a href="https://www.elephorm.com">Elephorm</a> et <a href="https://www.alsacreations.com">Alsacréations</a></p>
+			</footer>
+			
+		</div>
+		
+		<!-- Fichier externe qui permet de passer d'une style à une autre -->
+		<script src="scripts/changerstyle.js"></script>
+		
+	</body>
+	
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+		<meta charset="utf-8" />
+		<title>Présentation du site web Royal Road</title>
+		<!-- id #change pour trouver le bon élément + id #lien pour changer l'attribut href dans le fichier externe -->
+		<style type="text/css">
+			table
+			{
+				border-collapse: collapse;
+			}
+			td
+			{
+				border: 1px solid black;
+			}
+			#change {}
+			#lien {}
+        </style>
+		<link rel= "stylesheet" type= "text/css" href= "styles/base.css"/>
+		<link id="lien" rel= "stylesheet" type= "text/css" href= "styles/modele11.css"/>
+    </head>
+	
+    <body>
+	
+		<!-- largeur de 90%, marges automatiques, empêche de prendre une largeur trop faible ou trop importante -->
+		<div id="global">
+		
+			<!-- En-tête 2 -->
+			<header>
+				<h2>Royal Road</h2>
+			</header>
+		
+			<!-- Répète une image à la gauche pour crée une colonne + Rend le premier td dans tous les tr gras -->
+			<section id="centre" class="gras">
+				<!-- Répète une image à la droite pour crée une colonne + Rend le deuxième td dans tous les tr italique -->
+				<div id="centre-bis" class="italique">
+				
+					<!-- Liens vers pages de présentation avec sous-menu (Liens vers tableaux), accueil et conclusion -->
+					<nav id="navigation">
+						<ul>
+							<li class="gauche"><a href="index.html">Index</a></li>
+							<li class="gauche">
+								<a href="webnovel.com.html" class="fleche">WebNovel</a>
+								<ul class="webnovel">
+									<li><a href="webnovel.com.html#tableau-info">Informations sur la page d'accueil</a></li>
+									<li><a href="webnovel.com.html#tableau-type">Types de contenu</a></li>
+								</ul>
+							</li>
+							<li class="gauche">
+								<a href="royalroad.com.html" class="fleche">Royal Road</a>
+								<ul class="royalroad">
+									<li><a href="royalroad.com.html#tableau-info">Informations sur la page d'accueil</a></li>
+									<li><a href="royalroad.com.html#tableau-type">Types de contenu</a></li>
+								</ul>
+							</li>
+							<li class="gauche">
+								<a href="scribblehub.com.html" class="fleche">Scribble Hub</a>
+								<ul class="scribblehub">
+									<li><a href="scribblehub.com.html#tableau-info">Informations sur la page d'accueil</a></li>
+									<li><a href="scribblehub.com.html#tableau-type">Types de contenu</a></li>
+								</ul>
+							</li>
+							<li class="gauche"><a href="conclusion.html">Conclusion</a></li>
+							<!-- Option de menu qui permet de changer le style sur le clic -->
+							<li class="droite"><span id="change">Change le style du page au modèle 8</span></li>
+						</ul>
+					</nav>
+				
+					<!-- Le contenu secondaire avec le conteneur Flexblox-->
+					<div id="secondaire" class="flex-container">
+						<h3>Contenu secondaire</h3>
+						<p>« Lire est le seul moyen de vivre plusieurs fois ». Pierre Dumayet</p>
+						<p>« La lecture agrandit l’âme. » Voltaire</p>
+						<p>« Si vous n’aimez pas lire, vous n’avez pas trouvé le bon livre. » J.K. Rowling</p>
+					</div>
+					
+					<!-- Le contenu principal (bordure pointée) -->
+					<div id="principal" class="bordure">
+						<div>
+							<div id="cache1"></div>
+							<p>Mon premier image: (Cliquer pour agrandir)</p>
+		
+							<!-- Image (Dossier local) + Agrandissement de l'image -->
+							<a href="#cache1"><img src="images/royalroad.jpg" alt=""/></a>
+							<div class="popup">
+								<img src="images/royalroad.jpg" alt="" width="635" height="405">
+								<a href="#">X</a>
+							</div>
+						</div>
+						
+						<div>
+							<div id="cache2"></div>
+							<p>Mon deuxième image: (Cliquer pour agrandir)</p>
+		
+							<!-- Image (Emplacement sur le site d'origine) + Agrandissement de l'image -->
+							<a href="#cache2"><img src="https://www.royalroadcdn.com/public/covers-full/36735-the-perfect-run.jpg?time=1604749383" alt=""/></a>
+							<div class="popup">
+								<img src="https://www.royalroadcdn.com/public/covers-full/36735-the-perfect-run.jpg?time=1604749383" alt="" width="635" height="405">
+								<a href="#">X</a>
+							</div>
+						</div>
+						
+						<!-- En-tête 3 -->
+						<header>
+            				<h3>Informations générales sur le site</h3>
+						</header>
+		
+						<!-- Informations générales sur le site -->
+						<p>Le titre Royal Road donne une sentiment de fantaisie, ceci me dit que c'est une site qui contient des romans pas basés sur la réalité.</p>
+						<p>Le site traite de la publication et de la lecture de romans en ligne, particulièrement sur des genres de fantaisie et d'aventure.</p>
+		
+						<!-- Tableau HTML des informations sur la page d'accueil -->
+						<table id="tableau-info">
+							<tr>
+								<td>Couleur ou image de fond</td>
+								<td>Image de montagnes + Blanc (Thème lumière) ou Noir (Thème sombre).</td>
+							</tr>
+							<tr>
+								<td>Couleur(s) du texte</td>
+								<td>Noir, rouge, bleu, blanc (Thème lumière). Jaune, blanc, bleu (Thème sombre).</td>
+							</tr>
+							<tr>
+								<td>Interface(s) de navigation</td>
+								<td>Tous les interfaces sont en haut du site, sauf THEME SELECT qui donne l'option de Light et Dark. Il y a le logo de Royal Road, Read contient Best Rated, Trending, Ongoing Fictions,
+								Complete, Popular this week, Latest Updates, Newest Fictions, Rising Stars, Writathon, Search et Surprise me! Il y a aussi Write, Forums, Member List, Support qui contient Knowledge Base,
+								Suggestions, Community Help, Support Tickets et Status. De plus, il y a Premium, la loupe qui permet de chercher par titre, les notifications, Log In et Advanced Search.</td>
+							</tr>
+							<tr>
+								<td>Nombre d'écrans que remplis la page d'accueil sur mon poste</td>
+								<td>5 écrans, résolution de l'écran: 1920 x 1080.</td>
+							</tr>
+							<tr>
+								<td>Présence d'un ou plusieurs vidéo(s) et/ou animation(s)</td>
+								<td>Aucun.</td>
+							</tr>
+							<tr>
+								<td>Nombre, dimensions et positions des emplacements publicitaires</td>
+								<td>4 avertissements, dimensions varient, 1 avant PARTNER BOOKS, 1 après More Rising Stars, 2 après POPULAR THIS WEEK.</td>
+							</tr>
+						</table>
+						
+						<!-- Tableau HTML des types de contenu -->
+						<table id="tableau-type">
+							<caption>Types de contenu</caption>
+							<tr>
+								<td>Version HTML ou XHTML</td>
+								<td>HTML5.</td>
+							</tr>
+							<tr>
+								<td>Balise style dans le fichier HTML et/ou dans un fichier externe</td>
+								<td>Balise style directement dans le fichier HTML et dans 4 fichiers externes. Chemins d'accès: https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap;
+								/dist/vendor.css?v=0U1L9HuKWTaKgpE0UvCpxXbjDDflfnMTYEG_VMYHRkI; /dist/site-light.css?v=pLzCDwZyhgSd-ZezO6-Z-y1LshyaoiJN7ggTQuHErJA; /users/borders.css?v=Oy5i3A6ZhZF0qHcO&#x2B;htlww==.
+								Ils ne sont pas sur le même serveur. Les serveurs sont: https://fonts.googleapis.com, /dist et /users.</td>
+							</tr>
+							<tr>
+								<td>Type de script</td>
+								<td>Oui, ce site utilise un script externe</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</section>
+			
+			
+			<!-- Pied de page avec copyright -->
+			<footer id="pied">
+				<p id="copyright">Mise en page © 2008 <a href="https://www.elephorm.com">Elephorm</a> et <a href="https://www.alsacreations.com">Alsacréations</a></p>
+			</footer>
+			
+		</div>
+		
+		<!-- Fichier externe qui permet de passer d'une style à une autre -->
+		<script src="scripts/changerstyle.js"></script>
+		
+	</body>
+	
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+		<meta charset="utf-8" />
+		<title>Présentation du site web WebNovel</title>
+		<!-- id #change pour trouver le bon élément + id #lien pour changer l'attribut href dans le fichier externe -->
+		<style type="text/css">
+			table
+			{
+				border-collapse: collapse;
+			}
+			td
+			{
+				border: 1px solid black;
+			}
+			#change {}
+			#lien {}
+        </style>
+		<link rel= "stylesheet" type= "text/css" href= "styles/base.css"/>
+		<link id="lien" rel= "stylesheet" type= "text/css" href= "styles/modele11.css"/>
+    </head>
+	
+    <body>
+	
+		<!-- largeur de 90%, marges automatiques, empêche de prendre une largeur trop faible ou trop importante -->
+		<div id="global">
+		
+			<!-- En-tête 2 -->
+			<header>
+				<h2>Scribble Hub</h2>
+			</header>
+		
+			<!-- Répète une image à la gauche pour crée une colonne + Rend le premier td dans tous les tr gras -->
+			<section id="centre" class="gras">
+				<!-- Répète une image à la droite pour crée une colonne + Rend le deuxième td dans tous les tr italique -->
+				<div id="centre-bis" class="italique">
+				
+					<!-- Liens vers pages de présentation avec sous-menu (Liens vers tableaux), accueil et conclusion -->
+					<nav id="navigation">
+						<ul>
+							<li class="gauche"><a href="index.html">Index</a></li>
+							<li class="gauche">
+								<a href="webnovel.com.html" class="fleche">WebNovel</a>
+								<ul class="webnovel">
+									<li><a href="webnovel.com.html#tableau-info">Informations sur la page d'accueil</a></li>
+									<li><a href="webnovel.com.html#tableau-type">Types de contenu</a></li>
+								</ul>
+							</li>
+							<li class="gauche">
+								<a href="royalroad.com.html" class="fleche">Royal Road</a>
+								<ul class="royalroad">
+									<li><a href="royalroad.com.html#tableau-info">Informations sur la page d'accueil</a></li>
+									<li><a href="royalroad.com.html#tableau-type">Types de contenu</a></li>
+								</ul>
+							</li>
+							<li class="gauche">
+								<a href="scribblehub.com.html" class="fleche">Scribble Hub</a>
+								<ul class="scribblehub">
+									<li><a href="scribblehub.com.html#tableau-info">Informations sur la page d'accueil</a></li>
+									<li><a href="scribblehub.com.html#tableau-type">Types de contenu</a></li>
+								</ul>
+							</li>
+							<li class="gauche"><a href="conclusion.html">Conclusion</a></li>
+							<!-- Option de menu qui permet de changer le style sur le clic -->
+							<li class="droite"><span id="change">Change le style du page au modèle 8</span></li>
+						</ul>
+					</nav>
+				
+					<!-- Le contenu secondaire -->
+					<div id="secondaire">
+						<h3>Contenu secondaire</h3>
+						<p>« Lire est le seul moyen de vivre plusieurs fois ». Pierre Dumayet</p>
+						<p>« La lecture agrandit l’âme. » Voltaire</p>
+						<p>« Si vous n’aimez pas lire, vous n’avez pas trouvé le bon livre. » J.K. Rowling</p>
+					</div>
+					
+					<!-- Le contenu principal avec le conteneur Flexbox -->
+					<div id="principal" class="flex-container">
+						<div>
+							<div id="cache1"></div>
+		
+
+						</div>
+		
+						<div>
+							<div id="cache2"></div>
+		
+
+						</div>
+		
+						<!-- En-tête 3 -->
+						<header>
+           				 <h3>Informations générales sur le site</h3>
+						</header>
+		
+						<!-- Informations générales sur le site (bordure pointée)-->
+						<div class="bordure">
+							<p>Le titre WebNovel représente le fait que c'est une site qui nous montre des romans qui se trouve sur le web.</p>
+							<p>Le site traite de la publication et de la lecture de romans en ligne.</p>
+						</div>
+		
+						<!-- Tableau HTML des informations sur la page d'accueil -->
+						<table id="tableau-info">
+							<tr>
+								<td>Couleur ou image de fond</td>
+								<td>Blanc.</td>
+							</tr>
+							<tr>
+								<td>Couleur(s) du texte</td>
+								<td>Noir.</td>
+							</tr>
+							<tr>
+								<td>Interface(s) de navigation</td>
+								<td>Tous les interfaces sont en haut du site. Il y a le logo de WebNovel, Parcourir qui permet de choisir un genre qui se trouve dans Romans, Bande dessinée et Fan-fic,
+								Classement qui contient le classement des romans, bandes dessinées et fan-fictions, Créer, Concours qui contient plusieurs concours, la loupe qui permet de chercher des séries ou des utilisateurs,
+								Bibliothèque, Préférence qui contient le choix entre plus de romantisme ou plus de fantaisie et le choix entre 10 langues et CRÉER UN COMPTE</td>
+							</tr>
+							<tr>
+								<td>Nombre d'écrans que remplis la page d'accueil sur mon poste</td>
+								<td>5 écrans, résolution de l'écran: 1920 x 1080.</td>
+							</tr>
+							<tr>
+								<td>Présence d'un ou plusieurs vidéo(s) et/ou animation(s)</td>
+								<td>Aucun.</td>
+							</tr>
+							<tr>
+								<td>Nombre, dimensions et positions des emplacements publicitaires</td>
+								<td>1 avertissement, hauteur: 280px, largeur: 1008px, entre Top Fanfic Books et Top Fanfic Tags.</td>
+							</tr>
+						</table>
+						
+						<!-- Tableau HTML des types de contenu -->
+						<table id="tableau-type">
+							<caption>Types de contenu</caption>
+							<tr>
+								<td>Version HTML ou XHTML</td>
+								<td>HTML5.</td>
+							</tr>
+							<tr>
+								<td>Balise style dans le fichier HTML et/ou dans un fichier externe</td>
+								<td>Balise style directement dans le fichier HTML et dans 3 fichiers externes. Chemin d'accès: https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap;
+								//www.yueimg.com/en/css/global_css.a4dc155b.css; https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap.
+								Ils ne sont pas sur le même servuer. Les serveurs sont: www.yueimg.com et https://fonts.googleapis.com.</td>
+							</tr>
+							<tr>
+								<td>Type de script</td>
+								<td>Oui, ce site utilise un script externe</td>
+							</tr>
+						</table>
+						
+					</div>
+					
+				</div>
+			</section>
+			
+			<!-- Pied de page avec copyright -->
+			<footer id="pied">
+				<p id="copyright">Mise en page © 2008 <a href="https://www.elephorm.com">Elephorm</a> et <a href="https://www.alsacreations.com">Alsacréations</a></p>
+			</footer>
+			
+		</div>
+		
+		<!-- Fichier externe qui permet de passer d'une style à une autre -->
+		<script src="scripts/changerstyle.js"></script>
+		
+	</body>
+	
+</html>

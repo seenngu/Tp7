@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+		<meta charset="utf-8" />
+		<title>Accueil</title>
+		<!-- id #change pour trouver le bon élément + id #lien pour changer l'attribut href dans le fichier externe + id #pieddepage pour changer le lieu du copyright par clic -->
+		<style>
+			#change {}
+			#lien {}
+		</style>
+		<link rel= "stylesheet" type= "text/css" href= "styles/base.css"/>
+		<link id="lien" rel= "stylesheet" type= "text/css" href= "styles/modele11.css"/>
+    </head>
+	
+    <body>
+	
+		<!-- largeur de 90%, marges automatiques, empêche de prendre une largeur trop faible ou trop importante -->
+		<div id="global">
+		
+			<!-- En-tête 2 + Image logo du collège -->
+			<header id="entete">
+				<h2>
+					<img src="images/logoMomo.jpg" alt=""/><br/>
+					Raffi Boyajian et Sean Nguyen<br/>
+					Présentation des trois sites webs
+				</h2>
+			</header>
+		
+			<!-- Répète une image à la gauche pour crée une colonne -->
+			<section id="centre">
+				<!-- Répète une image à la droite pour crée une colonne -->
+				<div id="centre-bis">
+		
+					<!-- Liens vers pages de présentation avec sous-menu (Liens vers tableaux), accueil et conclusion -->
+					<nav id="navigation">
+						<ul>
+							<li class="gauche"><a href="index.html">Index</a></li>
+							<li class="gauche">
+								<a href="webnovel.com.html" class="fleche">WebNovel</a>
+								<ul class="webnovel">
+									<li><a href="webnovel.com.html#tableau-info">Informations sur la page d'accueil</a></li>
+									<li><a href="webnovel.com.html#tableau-type">Types de contenu</a></li>
+								</ul>
+							</li>
+							<li class="gauche">
+								<a href="royalroad.com.html" class="fleche">Royal Road</a>
+								<ul class="royalroad">
+									<li><a href="royalroad.com.html#tableau-info">Informations sur la page d'accueil</a></li>
+									<li><a href="royalroad.com.html#tableau-type">Types de contenu</a></li>
+								</ul>
+							</li>
+							<li class="gauche">
+								<a href="scribblehub.com.html" class="fleche">Scribble Hub</a>
+								<ul class="scribblehub">
+									<li><a href="scribblehub.com.html#tableau-info">Informations sur la page d'accueil</a></li>
+									<li><a href="scribblehub.com.html#tableau-type">Types de contenu</a></li>
+								</ul>
+							</li class="gauche">
+							<li class="gauche"><a href="conclusion.html">Conclusion</a></li>
+							<!-- Option de menu qui permet de changer le style sur le clic -->
+							<li class="droite"><span id="change">Change le style du page au modèle 8</span></li>
+						</ul>
+					</nav>
+				
+					<!-- Le contenu secondaire -->
+					<div id="secondaire">
+						<h3>Contenu secondaire</h3>
+						<p>« Lire est le seul moyen de vivre plusieurs fois ». Pierre Dumayet</p>
+						<p>« La lecture agrandit l’âme. » Voltaire</p>
+						<p>« Si vous n’aimez pas lire, vous n’avez pas trouvé le bon livre. » J.K. Rowling</p>
+					</div>
+		
+					<!-- Le contenu principal avec le conteneur Flexbox -->
+					<div id="principal" class="flex-container">
+						<p>Mes trois sites:</p>
+		
+						<!-- Capture d'écran des sites -->
+						<p>Image de WebNovel:</p>
+		
+						<img src="images/image1.png" alt="" width="400" height="200"/>
+		
+						<p>Image de Royal Road:</p>
+		
+						<img src="images/image2.png" alt="" width="400" height="200"/>
+		
+						<p>Image de Scribble Hub:</p>
+		
+						<img src="images/image3.png" alt="" width="400" height="200"/>
+
+					</div>
+			
+				</div>
+			</section>
+			
+			<!-- Pied de page avec copyright -->
+			<footer id="pied">
+				<p id="copyright">Mise en page © 2008 <a href="https://www.elephorm.com">Elephorm</a> et <a href="https://www.alsacreations.com">Alsacréations</a></p>
+			</footer>
+			
+		</div>
+		
+		<!-- Fichier externe qui permet de passer d'une style à une autre -->
+		<script src="scripts/changerstyle.js"></script>
+		
+	</body>
+	
+</html>
